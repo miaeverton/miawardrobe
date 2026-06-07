@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mia's Outfits</title>
+<meta name="theme-color" content="#faf9f7">
+<link rel="manifest" href="/manifest.json">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #faf9f7; --surf: #ffffff; --bdr: #e8e4de;
+  --txt: #1a1a1a; --mut: #6b6560; --acc: #2c2c2c;
+  --green: #2d6b3a; --green-bg: #eef5f0;
+  --blue: #1a3a5a; --blue-bg: #e8eff5;
+  --red: #8c3030; --r: 2px;
+  --font: -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --serif: Georgia, "Times New Roman", serif;
+}
+html { background: var(--bg); -webkit-text-size-adjust: 100%; }
+body { font-family: var(--font); font-size: 14px; line-height: 1.5; color: var(--txt); background: var(--bg); min-height: 100dvh; }
+
+/* ── Layout ── */
+.app { display: flex; flex-direction: column; min-height: 100dvh; }
+header { position: sticky; top: 0; z-index: 100; background: var(--surf); border-bottom: 1px solid var(--bdr); padding-top: env(safe-area-inset-top, 0); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 16px; }
+.logo { font-family: var(--serif); font-size: 18px; font-weight: 400; letter-spacing: .04em; color: var(--txt); text-decoration: none; }
+.logo small { color: var(--mut); font-size: 11px; margin-left: 6px; }
+.tab-bar { display: flex; border-top: 1px solid var(--bdr); }
+.tab { flex: 1; padding: 10px 0; background: none; border: none; border-bottom: 2px solid transparent; font-family: var(--font); font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: var(--mut); cursor: pointer; transition: all .15s; }
+.tab.active { color: var(--txt); border-bottom-color: var(--txt); }
+main { flex: 1; padding-bottom: env(safe-area-inset-bottom, 16px); }
+.wrap { max-width: 800px; margin: 0 auto; }
+
+/* ── Views ── */
+.view { display: none; }
+.view.active { display: block; }
+
+/* ── Prompt section ── */
+.prompt-section { padding: 20px 16px 0; }
+.prompt-label { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--mut); margin-bottom: 10px; }
+.prompt-box { position: relative; }
+.prompt-input { width: 100%; padding: 14px 52px 14px 16px; background: var(--surf); border: 1.5px solid var(--bdr); border-radius: var(--r); font-family: var(--font); font-size: 16px; color: var(--txt); outline: none; resize: none; min-height: 56px; max-height: 140px; line-height: 1.4; transition: border-color .15s; }
+.prompt-input:focus { border-color: var(--txt); }
+.prompt-input::placeholder { color: var(--mut); }
+.submit-btn { position: absolute; right: 10px; bottom: 10px; width: 36px; height: 36px; background: var(--txt); border: none; border-radius: var(--r); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: opacity .15s; }
+.submit-btn:disabled { opacity: .35; cursor: default; }
+.submit-btn svg { width: 16px; height: 16px; }
+.count-row { display: flex; gap: 8px; align-items: center; padding: 12px 16px 0; }
+.count-lbl { font-size: 11px; color: var(--mut); text-transform: uppercase; letter-spacing: .06em; }
+.count-btns { display: flex; gap: 4px; }
+.cnt-btn { padding: 4px 10px; border: 1px solid var(--bdr); background: var(--bg); border-radius: var(--r); font-family: var(--font); font-size: 12px; color: var(--mut); cursor: pointer; transition: all .12s; }
+.cnt-btn.active { background: var(--txt); color: #fff; border-color: var(--txt); }
+.suggestions { padding: 14px 16px 0; display: flex; flex-wrap: wrap; gap: 7px; }
+.sug { padding: 7px 12px; background: var(--surf); border: 1px solid var(--bdr); border-radius: 99px; font-size: 12px; color: var(--mut); cursor: pointer; transition: all .12s; white-space: nowrap; }
+.sug:hover { border-color: var(--txt); color: var(--txt); }
+
+/* ── States ── */
+.loading { display: none; flex-direction: column; align-items: center; justify-content: center; padding: 60px 24px; gap: 14px; text-align: center; }
+.loading.on { display: flex; }
+.spinner { width: 28px; height: 28px; border: 2px solid var(--bdr); border-top-color: var(--txt); border-radius: 50%; animation: spin .7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-msg { font-family: var(--serif); font-size: 14px; color: var(--mut); font-style: italic; }
+.err { display: none; margin: 16px; padding: 12px 14px; background: #fdf0f0; border: 1px solid #f0c8c8; border-radius: var(--r); font-size: 13px; color: var(--red); line-height: 1.5; }
+.err.on { display: block; }
+
+/* ── Boards ── */
+.boards { padding: 16px 0 32px; }
+.board { background: var(--surf); border-top: 1px solid var(--bdr); border-bottom: 1px solid var(--bdr); margin-bottom: 10px; }
+.board-hdr { padding: 16px 16px 10px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.board-meta { flex: 1; min-width: 0; }
+.board-rank { font-size: 10px; text-transform: uppercase; letter-spacing: .09em; color: var(--mut); margin-bottom: 4px; }
+.board-title { font-family: var(--serif); font-size: 17px; font-weight: 400; margin-bottom: 3px; line-height: 1.3; }
+.board-mood { font-size: 12px; color: var(--mut); font-style: italic; }
+.ns { font-size: 9px; padding: 4px 9px; border: 1px solid; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
+
+/* pieces scroll */
+.pieces-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; padding: 2px 16px 12px; scrollbar-width: none; }
+.pieces-wrap::-webkit-scrollbar { display: none; }
+.pieces-row { display: flex; gap: 8px; width: max-content; }
+.piece { width: 100px; flex-shrink: 0; }
+.piece-img { width: 100px; height: 100px; background: #f5f3f0; overflow: hidden; margin-bottom: 6px; }
+.piece-img img { width: 100%; height: 100%; object-fit: cover; }
+.piece-img-empty { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 9px; color: var(--mut); padding: 6px; text-align: center; }
+.piece-role { font-size: 8px; text-transform: uppercase; letter-spacing: .08em; color: var(--mut); margin-bottom: 2px; }
+.piece-name { font-size: 10px; line-height: 1.3; margin-bottom: 1px; }
+.piece-brand { font-size: 9px; text-transform: uppercase; letter-spacing: .04em; color: var(--mut); }
+
+/* board actions */
+.board-actions { padding: 0 16px 6px; display: flex; gap: 8px; }
+.act-btn { flex: 1; padding: 9px 0; border: 1px solid var(--bdr); background: var(--bg); font-family: var(--font); font-size: 12px; color: var(--mut); cursor: pointer; transition: all .12s; letter-spacing: .04em; }
+.act-btn.saved { background: var(--green-bg); color: var(--green); border-color: #8cba8c; }
+
+/* toggle */
+.toggle-btn { width: 100%; padding: 10px 16px; background: none; border: none; border-top: 1px solid var(--bdr); font-family: var(--font); font-size: 11px; color: var(--mut); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; letter-spacing: .04em; text-transform: uppercase; }
+.toggle-icon { transition: transform .2s; font-size: 10px; }
+.board.expanded .toggle-icon { transform: rotate(180deg); }
+.details { display: none; }
+.board.expanded .details { display: block; }
+.detail-inner { padding: 0 16px 4px; }
+
+/* detail blocks */
+.tuck-block { padding: 10px 12px; background: var(--green-bg); border-left: 3px solid #8cba8c; margin-bottom: 10px; font-size: 12px; color: var(--mut); font-style: italic; line-height: 1.5; }
+.tuck-lbl { display: inline-block; font-size: 9px; text-transform: uppercase; letter-spacing: .09em; color: var(--green); font-style: normal; font-weight: 600; margin-right: 6px; }
+.shoe-section { margin-bottom: 10px; }
+.shoe-lbl { font-size: 9px; text-transform: uppercase; letter-spacing: .09em; color: var(--mut); margin-bottom: 8px; }
+.shoe-opts { display: flex; flex-direction: column; gap: 8px; }
+.shoe-opt { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; background: var(--bg); border: 1px solid var(--bdr); }
+.shoe-opt img { width: 60px; height: 60px; object-fit: cover; flex-shrink: 0; background: #f5f3f0; border: 1px solid var(--bdr); }
+.shoe-opt-empty { width: 60px; height: 60px; flex-shrink: 0; background: #f5f3f0; border: 1px solid var(--bdr); }
+.shoe-badge { display: inline-block; font-size: 9px; padding: 2px 7px; background: var(--green-bg); color: var(--green); margin-bottom: 3px; }
+.shoe-badge.alt { background: #f5f2ee; color: var(--mut); }
+.shoe-name { font-size: 11px; font-weight: 500; margin-bottom: 3px; }
+.shoe-why { font-size: 11px; color: var(--mut); font-style: italic; line-height: 1.5; }
+.principles-section { margin-bottom: 10px; }
+.prin-lbl { font-size: 9px; text-transform: uppercase; letter-spacing: .09em; color: var(--mut); margin-bottom: 6px; }
+.prin-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.prin-list li { font-size: 11px; color: var(--mut); font-style: italic; padding: 4px 8px; background: var(--bg); border-left: 2px solid var(--bdr); line-height: 1.5; }
+.board-footer { padding: 4px 16px 14px; }
+
+/* ── Gallery ── */
+.gallery-hdr { padding: 20px 16px 12px; display: flex; justify-content: space-between; align-items: baseline; }
+.gallery-title { font-family: var(--serif); font-size: 18px; font-weight: 400; }
+.gallery-ct { font-size: 11px; color: var(--mut); font-style: italic; }
+.gallery-empty { padding: 60px 24px; text-align: center; color: var(--mut); font-style: italic; font-family: var(--serif); font-size: 15px; line-height: 1.8; display: none; }
+.gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--bdr); }
+.g-card { background: var(--surf); padding: 12px; cursor: pointer; }
+.g-thumbs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; margin-bottom: 8px; }
+.g-thumb { aspect-ratio: 1; overflow: hidden; background: #f5f3f0; }
+.g-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.g-title { font-size: 12px; font-weight: 500; margin-bottom: 2px; line-height: 1.3; }
+.g-meta { font-size: 10px; color: var(--mut); font-style: italic; }
+
+/* ── Wardrobe ── */
+.wardrobe-hdr { padding: 20px 16px 12px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+.wardrobe-title { font-family: var(--serif); font-size: 18px; font-weight: 400; }
+.w-search { width: calc(100% - 32px); margin: 0 16px 12px; padding: 10px 12px; border: 1px solid var(--bdr); background: var(--surf); font-family: var(--font); font-size: 14px; color: var(--txt); outline: none; }
+.cat-filters { padding: 0 16px 12px; display: flex; gap: 6px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.cat-filters::-webkit-scrollbar { display: none; }
+.cat-btn { padding: 5px 12px; border: 1px solid var(--bdr); background: var(--bg); border-radius: var(--r); font-family: var(--font); font-size: 11px; color: var(--mut); cursor: pointer; white-space: nowrap; transition: all .12s; letter-spacing: .04em; text-transform: uppercase; }
+.cat-btn.active { background: var(--txt); color: #fff; border-color: var(--txt); }
+.w-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--bdr); padding-bottom: 24px; }
+.w-item { background: var(--surf); }
+.w-img { width: 100%; aspect-ratio: 1; overflow: hidden; background: #f5f3f0; }
+.w-img img { width: 100%; height: 100%; object-fit: cover; }
+.w-info { padding: 6px 8px 8px; }
+.w-id { font-size: 8px; color: var(--mut); font-style: italic; font-family: monospace; }
+.w-name { font-size: 10px; line-height: 1.3; margin-bottom: 1px; }
+.w-brand { font-size: 9px; text-transform: uppercase; letter-spacing: .04em; color: var(--mut); }
+
+/* ── Responsive ── */
+@media(min-width:640px){
+  .header-inner,.prompt-section,.count-row,.suggestions,.boards,.board-hdr,.pieces-wrap,.board-actions,.detail-inner,.board-footer,.toggle-btn { padding-left:24px; padding-right:24px; }
+  .err { margin-left:24px; margin-right:24px; }
+  .w-grid { grid-template-columns:repeat(4,1fr); }
+  .gallery-grid { grid-template-columns:repeat(3,1fr); }
+  .piece { width:115px; } .piece-img { width:115px; height:115px; }
+}
+@media(min-width:1024px){
+  .w-grid { grid-template-columns:repeat(5,1fr); }
+  .gallery-grid { grid-template-columns:repeat(4,1fr); }
+}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">Mia's Outfits <small>AI Stylist</small></a>
+  </div>
+  <div class="tab-bar">
+    <button class="tab active" data-view="generate">Generate</button>
+    <button class="tab" data-view="gallery">Saved</button>
+    <button class="tab" data-view="wardrobe">Wardrobe</button>
+  </div>
+</header>
+<main>
+<div class="wrap">
+
+  <!-- Generate -->
+  <div class="view active" id="view-generate">
+    <div class="prompt-section">
+      <div class="prompt-label">What do you need?</div>
+      <div class="prompt-box">
+        <textarea class="prompt-input" id="promptInput" placeholder="Dinner tonight in SF, casual weekend, work offsite…" rows="2" maxlength="400"></textarea>
+        <button class="submit-btn" id="submitBtn" disabled aria-label="Generate">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="count-row">
+      <span class="count-lbl">Outfits</span>
+      <div class="count-btns" id="countBtns">
+        <button class="cnt-btn active" data-n="3">3</button>
+        <button class="cnt-btn" data-n="5">5</button>
+      </div>
+    </div>
+    <div class="suggestions" id="suggestions">
+      <button class="sug">Dinner tonight in SF</button>
+      <button class="sug">Work offsite</button>
+      <button class="sug">Tahoe weekend</button>
+      <button class="sug">Date night</button>
+      <button class="sug">Travel outfits</button>
+      <button class="sug">California weekend</button>
+    </div>
+    <div class="err" id="errBanner"></div>
+    <div class="loading" id="loadingState">
+      <div class="spinner"></div>
+      <div class="loading-msg" id="loadingMsg">Pulling looks from your wardrobe…</div>
+    </div>
+    <div class="boards" id="boardsContainer"></div>
+  </div>
+
+  <!-- Gallery -->
+  <div class="view" id="view-gallery">
+    <div class="gallery-hdr">
+      <div class="gallery-title">Saved Outfits</div>
+      <div class="gallery-ct" id="galleryCt"></div>
+    </div>
+    <div class="gallery-empty" id="galleryEmpty">No saved outfits yet.<br>Generate outfits and tap Save.</div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+
+  <!-- Wardrobe -->
+  <div class="view" id="view-wardrobe">
+    <div class="wardrobe-hdr">
+      <div class="wardrobe-title">Wardrobe</div>
+      <div class="gallery-ct" id="wardrobeCt"></div>
+    </div>
+    <input class="w-search" id="wSearch" placeholder="Search pieces…" type="search">
+    <div class="cat-filters" id="catFilters"></div>
+    <div class="w-grid" id="wGrid"></div>
+  </div>
+
+</div>
+</main>
+</div>
+
+<script>
+// ── State ──────────────────────────────────────────────────────────────
+let wardrobe = [];
+let savedOutfits = JSON.parse(localStorage.getItem('mia_v3_saved') || '[]');
+let outfitCount = 3;
+let wCat = 'all', wQ = '';
+
+const MSGS = [
+  'Pulling looks from your wardrobe…',
+  'Applying styling principles…',
+  'Checking footwear logic…',
+  'Running the final test…',
+];
+
+const NS_STYLES = {
+  'California Luxury':    {bg:'#f5f0e8',color:'#7a5a1a',bdr:'#d4b87a'},
+  'Parisian Refinement':  {bg:'#e8eff5',color:'#1a3a5a',bdr:'#7aaad4'},
+  'Copenhagen Creativity':{bg:'#ede8f5',color:'#3a1a5a',bdr:'#aa7ad4'},
+};
+const RANK_LBL = ['Most likely stylist pick','Second choice','Third choice','Fourth','Fifth','Sixth','Seventh','Eighth'];
+
+// ── Boot ───────────────────────────────────────────────────────────────
+async function boot() {
+  try {
+    const r = await fetch('/data/wardrobe.json');
+    wardrobe = await r.json();
+  } catch(e) { console.warn('wardrobe.json failed', e); }
+  initTabs(); initPrompt(); initCounts(); initSuggestions();
+  renderWardrobe(); renderGallery();
+  document.getElementById('wardrobeCt').textContent = wardrobe.length + ' items';
+}
+
+// ── Tabs ───────────────────────────────────────────────────────────────
+function initTabs() {
+  document.querySelectorAll('.tab').forEach(t => {
+    t.addEventListener('click', () => {
+      const v = t.dataset.view;
+      document.querySelectorAll('.tab').forEach(x => x.classList.toggle('active', x === t));
+      document.querySelectorAll('.view').forEach(x => x.classList.toggle('active', x.id === 'view-'+v));
+      if (v === 'gallery') renderGallery();
+    });
+  });
+}
+
+// ── Prompt ─────────────────────────────────────────────────────────────
+function initPrompt() {
+  const inp = document.getElementById('promptInput');
+  const btn = document.getElementById('submitBtn');
+  inp.addEventListener('input', () => {
+    btn.disabled = !inp.value.trim();
+    inp.style.height = 'auto';
+    inp.style.height = Math.min(inp.scrollHeight, 140) + 'px';
+  });
+  inp.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey && !btn.disabled) { e.preventDefault(); generate(); }
+  });
+  btn.addEventListener('click', generate);
+}
+function initCounts() {
+  document.getElementById('countBtns').addEventListener('click', e => {
+    const b = e.target.closest('.cnt-btn'); if (!b) return;
+    outfitCount = parseInt(b.dataset.n);
+    document.querySelectorAll('.cnt-btn').forEach(x => x.classList.toggle('active', x === b));
+  });
+}
+function initSuggestions() {
+  document.getElementById('suggestions').addEventListener('click', e => {
+    const s = e.target.closest('.sug'); if (!s) return;
+    document.getElementById('promptInput').value = s.textContent;
+    document.getElementById('submitBtn').disabled = false;
+    generate();
+  });
+}
+
+// ── Generate ───────────────────────────────────────────────────────────
+async function generate() {
+  const prompt = document.getElementById('promptInput').value.trim();
+  if (!prompt) return;
+  const btn = document.getElementById('submitBtn');
+  const loading = document.getElementById('loadingState');
+  const container = document.getElementById('boardsContainer');
+  const err = document.getElementById('errBanner');
+  const sugs = document.getElementById('suggestions');
+  const msgEl = document.getElementById('loadingMsg');
+
+  btn.disabled = true;
+  err.classList.remove('on');
+  container.innerHTML = '';
+  loading.classList.add('on');
+  sugs.style.display = 'none';
+
+  let mi = 0;
+  const interval = setInterval(() => { mi = (mi+1)%MSGS.length; msgEl.textContent = MSGS[mi]; }, 2000);
+
+  try {
+    const res = await fetch('/.netlify/functions/generate-outfits', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({prompt, count: outfitCount}),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+    renderBoards(data.outfits || []);
+    setTimeout(() => container.scrollIntoView({behavior:'smooth', block:'start'}), 80);
+  } catch(e) {
+    err.textContent = e.message || 'Could not generate outfits. Please try again.';
+    err.classList.add('on');
+  } finally {
+    clearInterval(interval);
+    loading.classList.remove('on');
+    btn.disabled = false;
+    sugs.style.display = '';
+  }
+}
+
+// ── Render boards ──────────────────────────────────────────────────────
+function renderBoards(outfits) {
+  const c = document.getElementById('boardsContainer');
+  c.innerHTML = '';
+  if (!outfits.length) {
+    c.innerHTML = '<div style="padding:40px 24px;text-align:center;color:var(--mut);font-style:italic">No outfits returned — try a different prompt.</div>';
+    return;
+  }
+  outfits.forEach((o, i) => c.appendChild(buildBoard(o, i)));
+}
+
+function buildBoard(o, idx) {
+  const ns = NS_STYLES[o.north_star] || NS_STYLES['California Luxury'];
+  const isSaved = savedOutfits.some(s => s.id === o.id);
+  const rankLbl = RANK_LBL[idx] || `#${idx+1}`;
+
+  // Pieces
+  const piecesHtml = (o.pieces || []).filter(p => p.item).map(p => `
+    <div class="piece">
+      <div class="piece-img">${p.item?.image
+        ? `<img src="${p.item.image}" alt="${p.item.name||''}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=piece-img-empty>${p.item.id||''}</div>'">`
+        : `<div class="piece-img-empty">${p.item?.id||''}</div>`}</div>
+      <div class="piece-role">${p.role||''}</div>
+      <div class="piece-name">${p.item?.name||''}</div>
+      <div class="piece-brand">${p.item?.brand||''}</div>
+    </div>`).join('');
+
+  // Shoe options
+  const sp = o.shoe_primary, sa = o.shoe_alternative;
+  const shoeHtml = (sp||sa) ? `
+    <div class="shoe-section">
+      <div class="shoe-lbl">Footwear</div>
+      <div class="shoe-opts">
+        ${sp ? `<div class="shoe-opt">
+          ${sp.item?.image ? `<img src="${sp.item.image}" alt="${sp.item.name||''}" loading="lazy">` : '<div class="shoe-opt-empty"></div>'}
+          <div><div class="shoe-badge">✓ Wear this</div><div class="shoe-name">${sp.item?.name||sp.item_id||''}</div>
+          <div class="shoe-why">${(o.footwear_rationale||'').split('Alt:')[0].replace('Primary:','').trim()}</div></div>
+        </div>` : ''}
+        ${sa ? `<div class="shoe-opt">
+          ${sa.item?.image ? `<img src="${sa.item.image}" alt="${sa.item.name||''}" loading="lazy">` : '<div class="shoe-opt-empty"></div>'}
+          <div><div class="shoe-badge alt">↳ Alternative</div><div class="shoe-name">${sa.item?.name||sa.item_id||''}</div>
+          <div class="shoe-why">${(o.footwear_rationale||'').includes('Alt:') ? o.footwear_rationale.split('Alt:')[1].trim() : ''}</div></div>
+        </div>` : ''}
+      </div>
+    </div>` : '';
+
+  const prinHtml = (o.principles_used||[]).length ? `
+    <div class="principles-section">
+      <div class="prin-lbl">Principles applied</div>
+      <ul class="prin-list">${o.principles_used.map(p=>`<li>${p}</li>`).join('')}</ul>
+    </div>` : '';
+
+  const tuckHtml = o.tuck_or_styling_note
+    ? `<div class="tuck-block"><span class="tuck-lbl">Tuck</span>${o.tuck_or_styling_note}</div>` : '';
+
+  const board = document.createElement('div');
+  board.className = 'board';
+  board.dataset.id = o.id;
+  board.innerHTML = `
+    <div class="board-hdr">
+      <div class="board-meta">
+        <div class="board-rank">#${idx+1} — ${rankLbl}</div>
+        <div class="board-title">${o.outfit_name||o.title||'Outfit'}</div>
+        <div class="board-mood">${o.mood||''}</div>
+      </div>
+      ${o.north_star ? `<div class="ns" style="background:${ns.bg};color:${ns.color};border-color:${ns.bdr}">${o.north_star}</div>` : ''}
+    </div>
+    <div class="pieces-wrap"><div class="pieces-row">${piecesHtml}</div></div>
+    <div class="board-actions">
+      <button class="act-btn save-btn ${isSaved?'saved':''}">${isSaved?'✓ Saved':'Save'}</button>
+    </div>
+    <button class="toggle-btn"><span class="toggle-txt">Styling details</span><span class="toggle-icon">▾</span></button>
+    <div class="details">
+      <div class="detail-inner">
+        ${tuckHtml}${shoeHtml}${prinHtml}
+      </div>
+    </div>`;
+
+  board.querySelector('.toggle-btn').addEventListener('click', function() {
+    const exp = board.classList.toggle('expanded');
+    this.querySelector('.toggle-txt').textContent = exp ? 'Hide details' : 'Styling details';
+  });
+  board.querySelector('.save-btn').addEventListener('click', () => toggleSave(o, board));
+  return board;
+}
+
+// ── Save / Gallery ─────────────────────────────────────────────────────
+function toggleSave(outfit, board) {
+  const idx = savedOutfits.findIndex(s => s.id === outfit.id);
+  const btn = board.querySelector('.save-btn');
+  if (idx >= 0) {
+    savedOutfits.splice(idx, 1);
+    btn.textContent = 'Save'; btn.classList.remove('saved');
+  } else {
+    savedOutfits.unshift({...outfit, savedAt: Date.now()});
+    btn.textContent = '✓ Saved'; btn.classList.add('saved');
+  }
+  localStorage.setItem('mia_v3_saved', JSON.stringify(savedOutfits));
+}
+
+function renderGallery() {
+  const grid = document.getElementById('galleryGrid');
+  const empty = document.getElementById('galleryEmpty');
+  const ct = document.getElementById('galleryCt');
+  grid.innerHTML = '';
+  ct.textContent = savedOutfits.length ? savedOutfits.length + ' saved' : '';
+  empty.style.display = savedOutfits.length ? 'none' : '';
+  savedOutfits.forEach(o => {
+    const thumbs = (o.pieces||[]).slice(0,3).filter(p=>p.item?.image);
+    const card = document.createElement('div');
+    card.className = 'g-card';
+    card.innerHTML = `
+      <div class="g-thumbs">
+        ${thumbs.map(p=>`<div class="g-thumb"><img src="${p.item.image}" loading="lazy"></div>`).join('')}
+        ${Array(Math.max(0,3-thumbs.length)).fill('<div class="g-thumb"></div>').join('')}
+      </div>
+      <div class="g-title">${o.outfit_name||o.title||'Outfit'}</div>
+      <div class="g-meta">${o.mood||''}</div>`;
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.view==='generate'));
+      document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id==='view-generate'));
+      const c = document.getElementById('boardsContainer');
+      c.innerHTML = ''; c.appendChild(buildBoard(o, 0));
+      c.scrollIntoView({behavior:'smooth'});
+    });
+    grid.appendChild(card);
+  });
+}
+
+// ── Wardrobe browser ───────────────────────────────────────────────────
+function renderWardrobe() {
+  const cats = ['all', ...new Set(wardrobe.map(it=>it.category))];
+  const filters = document.getElementById('catFilters');
+  filters.innerHTML = cats.map(c =>
+    `<button class="cat-btn${c==='all'?' active':''}" data-cat="${c}">${c==='all'?'All':c.charAt(0).toUpperCase()+c.slice(1)}</button>`
+  ).join('');
+  filters.addEventListener('click', e => {
+    const b = e.target.closest('.cat-btn'); if(!b) return;
+    wCat = b.dataset.cat;
+    document.querySelectorAll('.cat-btn').forEach(x=>x.classList.toggle('active',x===b));
+    renderWGrid();
+  });
+  document.getElementById('wSearch').addEventListener('input', e => { wQ = e.target.value.toLowerCase(); renderWGrid(); });
+  renderWGrid();
+}
+function renderWGrid() {
+  const filtered = wardrobe.filter(it => {
+    const catOk = wCat==='all'||it.category===wCat;
+    const qOk = !wQ || it.name.toLowerCase().includes(wQ) || it.brand.toLowerCase().includes(wQ) || (it.tags||[]).some(t=>t.toLowerCase().includes(wQ));
+    return catOk && qOk;
+  });
+  document.getElementById('wGrid').innerHTML = filtered.map(it => `
+    <div class="w-item">
+      <div class="w-img">${it.image
+        ? `<img src="${it.image}" alt="${it.name}" loading="lazy">`
+        : `<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:9px;color:var(--mut);background:#f5f3f0">${it.id}</div>`}
+      </div>
+      <div class="w-info">
+        <div class="w-id">${it.id}</div>
+        <div class="w-name">${it.name}</div>
+        <div class="w-brand">${it.brand}</div>
+      </div>
+    </div>`).join('');
+}
+
+boot();
+</script>
+</body>
+</html>
