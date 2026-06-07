@@ -1,0 +1,2448 @@
+[
+  {
+    "id": "TOP-004",
+    "name": "Oversized Cardigan \u2014 Grey",
+    "brand": "Almina Concept",
+    "category": "tops",
+    "color": "grey",
+    "tags": [
+      "grey",
+      "oversized",
+      "cardigan",
+      "button-front",
+      "v-neck",
+      "relaxed",
+      "quiet luxury",
+      "cozy chic"
+    ],
+    "confidence": 92,
+    "file": "TOP-004.jpg",
+    "source_crop": "wardrobe_001_card03",
+    "image": "/images/wardrobe/TOP-004.jpg"
+  },
+  {
+    "id": "TOP-006",
+    "name": "Denim Button-Down Shirt \u2014 White/Light",
+    "brand": "Banana Republic",
+    "category": "tops",
+    "color": "white/light denim",
+    "tags": [
+      "white",
+      "denim",
+      "button-down",
+      "shirt",
+      "relaxed",
+      "classic",
+      "effortless"
+    ],
+    "confidence": 92,
+    "file": "TOP-006.jpg",
+    "source_crop": "wardrobe_001_card05",
+    "image": "/images/wardrobe/TOP-006.jpg"
+  },
+  {
+    "id": "TOP-007",
+    "name": "Denim Shirt \u2014 Dark Indigo",
+    "brand": "Chaco",
+    "category": "tops",
+    "color": "dark indigo",
+    "tags": [
+      "dark indigo",
+      "navy",
+      "oversized",
+      "relaxed",
+      "effortless"
+    ],
+    "confidence": 93,
+    "file": "TOP-007.jpg",
+    "source_crop": "wardrobe_001_card06",
+    "image": "/images/wardrobe/TOP-007.jpg"
+  },
+  {
+    "id": "TOP-008",
+    "name": "Silk Tank Top \u2014 Black",
+    "brand": "Banana Republic",
+    "category": "tops",
+    "color": "black",
+    "tags": [
+      "black",
+      "silk",
+      "tank",
+      "sleeveless",
+      "fitted",
+      "minimalist",
+      "quiet luxury"
+    ],
+    "confidence": 93,
+    "file": "TOP-008.jpg",
+    "source_crop": "wardrobe_001_card07",
+    "image": "/images/wardrobe/TOP-008.jpg"
+  },
+  {
+    "id": "TOP-009",
+    "name": "Ruffled Peplum Top \u2014 Black",
+    "brand": "ShopBop",
+    "category": "tops",
+    "color": "black",
+    "tags": [
+      "black",
+      "fitted",
+      "peplum",
+      "feminine",
+      "quiet luxury"
+    ],
+    "confidence": 90,
+    "file": "TOP-009.jpg",
+    "source_crop": "wardrobe_001_card08",
+    "image": "/images/wardrobe/TOP-009.jpg"
+  },
+  {
+    "id": "TOP-011",
+    "name": "Strapless Tube Top \u2014 Black",
+    "brand": "Quince",
+    "category": "tops",
+    "color": "black",
+    "tags": [
+      "black",
+      "fitted",
+      "strapless",
+      "minimalist",
+      "sleek",
+      "wardrobe essential"
+    ],
+    "confidence": 95,
+    "file": "TOP-011.jpg",
+    "source_crop": "wardrobe_001_card10",
+    "image": "/images/wardrobe/TOP-011.jpg"
+  },
+  {
+    "id": "TOP-012",
+    "name": "Classic T-Shirt \u2014 White",
+    "brand": "Chaco",
+    "category": "tops",
+    "color": "white",
+    "tags": [
+      "white",
+      "relaxed",
+      "boxy",
+      "wardrobe essential",
+      "minimalist"
+    ],
+    "confidence": 97,
+    "file": "TOP-012.jpg",
+    "source_crop": "wardrobe_001_card11",
+    "image": "/images/wardrobe/TOP-012.jpg"
+  },
+  {
+    "id": "TOP-013",
+    "name": "Linen Button-Down Shirt \u2014 Black",
+    "brand": "Chaco",
+    "category": "tops",
+    "color": "black",
+    "tags": [
+      "black",
+      "linen",
+      "button-down",
+      "shirt",
+      "relaxed",
+      "minimalist",
+      "effortless"
+    ],
+    "confidence": 95,
+    "file": "TOP-013.jpg",
+    "source_crop": "wardrobe_001_card12",
+    "image": "/images/wardrobe/TOP-013.jpg"
+  },
+  {
+    "id": "TOP-015",
+    "name": "Voluminous Blouse \u2014 Brown",
+    "brand": "Banana Republic",
+    "category": "tops",
+    "color": "chocolate brown",
+    "tags": [
+      "chocolate brown",
+      "dramatic sleeves",
+      "voluminous",
+      "romantic",
+      "statement"
+    ],
+    "confidence": 90,
+    "file": "TOP-015.jpg",
+    "source_crop": "wardrobe_001_card14",
+    "image": "/images/wardrobe/TOP-015.jpg"
+  },
+  {
+    "id": "TOP-016",
+    "name": "Crop T-Shirt \u2014 Olive",
+    "brand": "Chaco",
+    "category": "tops",
+    "color": "olive",
+    "tags": [
+      "olive",
+      "khaki green",
+      "boxy",
+      "cropped",
+      "minimalist"
+    ],
+    "confidence": 93,
+    "file": "TOP-016.jpg",
+    "source_crop": "wardrobe_001_card15",
+    "image": "/images/wardrobe/TOP-016.jpg"
+  },
+  {
+    "id": "TOP-017",
+    "name": "Ruffle Smock Top \u2014 White",
+    "brand": "J Crew",
+    "category": "tops",
+    "color": "white",
+    "tags": [
+      "white",
+      "ruffle",
+      "smock",
+      "sleeveless",
+      "feminine",
+      "romantic",
+      "effortless"
+    ],
+    "confidence": 95,
+    "file": "TOP-017.jpg",
+    "source_crop": "wardrobe_001_card16",
+    "image": "/images/wardrobe/TOP-017.jpg"
+  },
+  {
+    "id": "TOP-018",
+    "name": "Classic T-Shirt \u2014 White (Banana Republic)",
+    "brand": "Banana Republic",
+    "category": "tops",
+    "color": "white",
+    "tags": [
+      "white",
+      "relaxed",
+      "boxy",
+      "minimalist",
+      "wardrobe essential"
+    ],
+    "confidence": 93,
+    "file": "TOP-018.jpg",
+    "source_crop": "wardrobe_002_card00",
+    "image": "/images/wardrobe/TOP-018.jpg"
+  },
+  {
+    "id": "TOP-019",
+    "name": "Classic T-Shirt \u2014 Black",
+    "brand": "Banana Republic",
+    "category": "tops",
+    "color": "black",
+    "tags": [
+      "black",
+      "relaxed",
+      "boxy",
+      "minimalist"
+    ],
+    "confidence": 88,
+    "file": "TOP-019.jpg",
+    "source_crop": "wardrobe_002_card01",
+    "image": "/images/wardrobe/TOP-019.jpg"
+  },
+  {
+    "id": "TOP-020",
+    "name": "Long Sleeve Shirt \u2014 White",
+    "brand": "COS",
+    "category": "tops",
+    "color": "white",
+    "tags": [
+      "white",
+      "long sleeve",
+      "shirt",
+      "relaxed",
+      "minimalist",
+      "clean",
+      "effortless"
+    ],
+    "confidence": 92,
+    "file": "TOP-020.jpg",
+    "source_crop": "wardrobe_002_card02",
+    "image": "/images/wardrobe/TOP-020.jpg"
+  },
+  {
+    "id": "TOP-021",
+    "name": "Classic T-Shirt \u2014 White (Leset)",
+    "brand": "Leset",
+    "category": "tops",
+    "color": "white",
+    "tags": [
+      "white",
+      "relaxed",
+      "boxy",
+      "minimalist"
+    ],
+    "confidence": 88,
+    "file": "TOP-021.jpg",
+    "source_crop": "wardrobe_002_card03",
+    "image": "/images/wardrobe/TOP-021.jpg"
+  },
+  {
+    "id": "TOP-026",
+    "name": "White Button-Down Shirt",
+    "brand": "Banana Republic",
+    "category": "tops",
+    "color": "white",
+    "tags": [
+      "white",
+      "button-down",
+      "relaxed",
+      "classic",
+      "effortless",
+      "minimalist"
+    ],
+    "confidence": 90,
+    "file": "TOP-026.jpg",
+    "source_crop": "wardrobe_002_card08",
+    "image": "/images/wardrobe/TOP-026.jpg"
+  },
+  {
+    "id": "TOP-027",
+    "name": "Button-Down Shirt \u2014 Chocolate Brown",
+    "brand": "ShopBop",
+    "category": "tops",
+    "color": "chocolate brown",
+    "tags": [
+      "chocolate brown",
+      "button-down",
+      "shirt",
+      "relaxed",
+      "fitted",
+      "effortless",
+      "minimalist"
+    ],
+    "confidence": 92,
+    "file": "TOP-027.jpg",
+    "source_crop": "wardrobe_002_card09",
+    "image": "/images/wardrobe/TOP-027.jpg"
+  },
+  {
+    "id": "TOP-028",
+    "name": "Ribbed Tank \u2014 Black (fitted)",
+    "brand": "ShopBop",
+    "category": "tops",
+    "color": "black",
+    "tags": [
+      "black",
+      "fitted",
+      "sleeveless",
+      "ribbed",
+      "tank",
+      "minimalist",
+      "wardrobe essential"
+    ],
+    "confidence": 93,
+    "file": "TOP-028.jpg",
+    "source_crop": "wardrobe_002_card10",
+    "image": "/images/wardrobe/TOP-028.jpg"
+  },
+  {
+    "id": "TOP-029",
+    "name": "Ribbed Tank \u2014 White",
+    "brand": "Revolve",
+    "category": "tops",
+    "color": "white",
+    "tags": [
+      "white",
+      "fitted",
+      "sleeveless",
+      "ribbed",
+      "minimalist",
+      "wardrobe essential"
+    ],
+    "confidence": 92,
+    "file": "TOP-029.jpg",
+    "source_crop": "wardrobe_002_card11",
+    "image": "/images/wardrobe/TOP-029.jpg"
+  },
+  {
+    "id": "TOP-030",
+    "name": "Ribbed Tank \u2014 Black",
+    "brand": "Revolve",
+    "category": "tops",
+    "color": "black",
+    "tags": [
+      "black",
+      "fitted",
+      "sleeveless",
+      "ribbed",
+      "minimalist",
+      "wardrobe essential"
+    ],
+    "confidence": 92,
+    "file": "TOP-030.jpg",
+    "source_crop": "wardrobe_002_card12",
+    "image": "/images/wardrobe/TOP-030.jpg"
+  },
+  {
+    "id": "TOP-031",
+    "name": "Ribbed Racerback Tank \u2014 White",
+    "brand": "ShopBop",
+    "category": "tops",
+    "color": "white",
+    "tags": [
+      "white",
+      "fitted",
+      "sleeveless",
+      "racerback",
+      "ribbed",
+      "minimalist"
+    ],
+    "confidence": 88,
+    "file": "TOP-031.jpg",
+    "source_crop": "wardrobe_002_card13",
+    "image": "/images/wardrobe/TOP-031.jpg"
+  },
+  {
+    "id": "TOP-033",
+    "name": "Polo Sweatshirt \u2014 Grey",
+    "brand": "Reformation",
+    "category": "tops",
+    "color": "grey",
+    "tags": [
+      "grey",
+      "polo collar",
+      "sweatshirt",
+      "relaxed",
+      "sporty chic",
+      "effortless"
+    ],
+    "confidence": 93,
+    "file": "TOP-033.jpg",
+    "source_crop": "wardrobe_16_card00",
+    "image": "/images/wardrobe/TOP-033.jpg"
+  },
+  {
+    "id": "TOP-034",
+    "name": "Striped Button-Down Shirt (Oversized)",
+    "brand": "J Crew",
+    "category": "tops",
+    "color": "white/navy stripe",
+    "tags": [
+      "white",
+      "navy stripe",
+      "oversized",
+      "relaxed",
+      "classic",
+      "preppy",
+      "effortless"
+    ],
+    "confidence": 95,
+    "file": "TOP-034.jpg",
+    "source_crop": "wardrobe_18_card00",
+    "image": "/images/wardrobe/TOP-034.jpg"
+  },
+  {
+    "id": "TOP-001",
+    "name": "Cardigan \u2014 Cream/Taupe",
+    "brand": "Reformation",
+    "category": "knitwear",
+    "color": "cream/taupe",
+    "tags": [
+      "cream",
+      "taupe",
+      "cardigan",
+      "button-front",
+      "relaxed",
+      "quiet luxury",
+      "effortless"
+    ],
+    "confidence": 93,
+    "file": "TOP-001.jpg",
+    "source_crop": "wardrobe_001_card00",
+    "image": "/images/wardrobe/TOP-001.jpg"
+  },
+  {
+    "id": "TOP-002",
+    "name": "Cardigan \u2014 Green",
+    "brand": "Reformation",
+    "category": "knitwear",
+    "color": "green",
+    "tags": [
+      "green",
+      "olive",
+      "cardigan",
+      "button-front",
+      "relaxed",
+      "effortless",
+      "quiet luxury"
+    ],
+    "confidence": 95,
+    "file": "TOP-002.jpg",
+    "source_crop": "wardrobe_001_card01",
+    "image": "/images/wardrobe/TOP-002.jpg"
+  },
+  {
+    "id": "TOP-003",
+    "name": "Cardigan \u2014 Brown",
+    "brand": "Reformation",
+    "category": "knitwear",
+    "color": "brown",
+    "tags": [
+      "brown",
+      "cardigan",
+      "button-front",
+      "relaxed",
+      "quiet luxury",
+      "effortless"
+    ],
+    "confidence": 93,
+    "file": "TOP-003.jpg",
+    "source_crop": "wardrobe_001_card02",
+    "image": "/images/wardrobe/TOP-003.jpg"
+  },
+  {
+    "id": "TOP-005",
+    "name": "Cardigan \u2014 Brown (Almina Concept)",
+    "brand": "Almina Concept",
+    "category": "knitwear",
+    "color": "brown",
+    "tags": [
+      "brown",
+      "cardigan",
+      "relaxed",
+      "button-front",
+      "quiet luxury",
+      "effortless"
+    ],
+    "confidence": 93,
+    "file": "TOP-005.jpg",
+    "source_crop": "wardrobe_001_card04",
+    "image": "/images/wardrobe/TOP-005.jpg"
+  },
+  {
+    "id": "TOP-010",
+    "name": "V-Neck Sweater \u2014 Cream",
+    "brand": "Banana Republic",
+    "category": "knitwear",
+    "color": "cream",
+    "tags": [
+      "cream",
+      "ivory",
+      "v-neck",
+      "knit",
+      "relaxed",
+      "quiet luxury",
+      "wardrobe essential"
+    ],
+    "confidence": 95,
+    "file": "TOP-010.jpg",
+    "source_crop": "wardrobe_001_card09",
+    "image": "/images/wardrobe/TOP-010.jpg"
+  },
+  {
+    "id": "TOP-014",
+    "name": "Cardigan \u2014 Black (Quince)",
+    "brand": "Quince",
+    "category": "knitwear",
+    "color": "black",
+    "tags": [
+      "black",
+      "cardigan",
+      "cropped",
+      "button-front",
+      "minimalist",
+      "quiet luxury"
+    ],
+    "confidence": 93,
+    "file": "TOP-014.jpg",
+    "source_crop": "wardrobe_001_card13",
+    "image": "/images/wardrobe/TOP-014.jpg"
+  },
+  {
+    "id": "TOP-022",
+    "name": "Polo Sweater \u2014 Grey",
+    "brand": "Reformation",
+    "category": "knitwear",
+    "color": "grey",
+    "tags": [
+      "grey",
+      "polo collar",
+      "sweater",
+      "relaxed",
+      "sporty chic",
+      "effortless",
+      "quiet luxury"
+    ],
+    "confidence": 93,
+    "file": "TOP-022.jpg",
+    "source_crop": "wardrobe_002_card04",
+    "image": "/images/wardrobe/TOP-022.jpg"
+  },
+  {
+    "id": "TOP-023",
+    "name": "Chunky Knit Sweater \u2014 Olive/Green",
+    "brand": "Nordstrom",
+    "category": "knitwear",
+    "color": "olive green",
+    "tags": [
+      "olive",
+      "green",
+      "chunky knit",
+      "v-neck",
+      "relaxed",
+      "quiet luxury",
+      "cozy"
+    ],
+    "confidence": 92,
+    "file": "TOP-023.jpg",
+    "source_crop": "wardrobe_002_card05",
+    "image": "/images/wardrobe/TOP-023.jpg"
+  },
+  {
+    "id": "TOP-024",
+    "name": "V-Neck Sweater \u2014 Cream (Banana Republic)",
+    "brand": "Banana Republic",
+    "category": "knitwear",
+    "color": "cream",
+    "tags": [
+      "cream",
+      "ivory",
+      "v-neck",
+      "knit",
+      "relaxed",
+      "quiet luxury"
+    ],
+    "confidence": 92,
+    "file": "TOP-024.jpg",
+    "source_crop": "wardrobe_002_card06",
+    "image": "/images/wardrobe/TOP-024.jpg"
+  },
+  {
+    "id": "TOP-025",
+    "name": "V-Neck Sweater \u2014 Brown",
+    "brand": "Reformation",
+    "category": "knitwear",
+    "color": "brown",
+    "tags": [
+      "brown",
+      "v-neck",
+      "sweater",
+      "oversized",
+      "relaxed",
+      "quiet luxury",
+      "effortless"
+    ],
+    "confidence": 93,
+    "file": "TOP-025.jpg",
+    "source_crop": "wardrobe_002_card07",
+    "image": "/images/wardrobe/TOP-025.jpg"
+  },
+  {
+    "id": "TOP-032",
+    "name": "Cardigan \u2014 Cobalt Blue",
+    "brand": "Almina Concept",
+    "category": "knitwear",
+    "color": "cobalt blue",
+    "tags": [
+      "cobalt blue",
+      "electric blue",
+      "cardigan",
+      "button-front",
+      "relaxed",
+      "quiet luxury",
+      "color pop",
+      "statement"
+    ],
+    "confidence": 97,
+    "file": "TOP-032.jpg",
+    "source_crop": "wardrobe_014_card00",
+    "image": "/images/wardrobe/TOP-032.jpg"
+  },
+  {
+    "id": "BOT-001",
+    "name": "Silk Maxi Skirt \u2014 Black",
+    "brand": "Almina Concept",
+    "category": "bottoms",
+    "color": "black",
+    "tags": [
+      "black",
+      "silk",
+      "maxi skirt",
+      "column",
+      "fitted",
+      "minimalist",
+      "quiet luxury"
+    ],
+    "confidence": 93,
+    "file": "BOT-001.jpg",
+    "source_crop": "wardrobe_008_card00",
+    "image": "/images/wardrobe/BOT-001.jpg"
+  },
+  {
+    "id": "BOT-002",
+    "name": "Silk Maxi Skirt \u2014 Brown",
+    "brand": "Almina Concept",
+    "category": "bottoms",
+    "color": "chocolate brown",
+    "tags": [
+      "chocolate brown",
+      "silk",
+      "maxi skirt",
+      "column",
+      "fitted",
+      "quiet luxury"
+    ],
+    "confidence": 93,
+    "file": "BOT-002.jpg",
+    "source_crop": "wardrobe_008_card01",
+    "image": "/images/wardrobe/BOT-002.jpg"
+  },
+  {
+    "id": "BOT-003",
+    "name": "Wide-Leg Silk Trousers \u2014 Black",
+    "brand": "Almina Concept",
+    "category": "bottoms",
+    "color": "black",
+    "tags": [
+      "black",
+      "silk",
+      "wide leg",
+      "relaxed",
+      "minimalist",
+      "quiet luxury",
+      "fluid"
+    ],
+    "confidence": 90,
+    "file": "BOT-003.jpg",
+    "source_crop": "wardrobe_008_card02",
+    "image": "/images/wardrobe/BOT-003.jpg"
+  },
+  {
+    "id": "BOT-004",
+    "name": "Wide-Leg Trousers \u2014 Chocolate Brown (styled)",
+    "brand": "Almina Concept",
+    "category": "bottoms",
+    "color": "chocolate brown",
+    "tags": [
+      "chocolate brown",
+      "wide leg",
+      "high waist",
+      "relaxed",
+      "quiet luxury",
+      "styled look"
+    ],
+    "confidence": 88,
+    "file": "BOT-004.jpg",
+    "source_crop": "wardrobe_008_card03",
+    "image": "/images/wardrobe/BOT-004.jpg"
+  },
+  {
+    "id": "BOT-005",
+    "name": "Wide-Leg Jeans \u2014 Black Barrel",
+    "brand": "Frame",
+    "category": "bottoms",
+    "color": "black",
+    "tags": [
+      "black",
+      "wide leg",
+      "barrel",
+      "high waist",
+      "denim",
+      "minimalist",
+      "quiet luxury"
+    ],
+    "confidence": 92,
+    "file": "BOT-005.jpg",
+    "source_crop": "wardrobe_008_card04",
+    "image": "/images/wardrobe/BOT-005.jpg"
+  },
+  {
+    "id": "BOT-006",
+    "name": "Wide-Leg Trousers \u2014 Olive/Khaki",
+    "brand": "La Ligne",
+    "category": "bottoms",
+    "color": "olive",
+    "tags": [
+      "olive",
+      "khaki",
+      "wide leg",
+      "relaxed",
+      "minimalist",
+      "earthy"
+    ],
+    "confidence": 92,
+    "file": "BOT-006.jpg",
+    "source_crop": "wardrobe_008_card05",
+    "image": "/images/wardrobe/BOT-006.jpg"
+  },
+  {
+    "id": "BOT-007",
+    "name": "Wide-Leg Jeans \u2014 Light Wash",
+    "brand": "Rag & Bone",
+    "category": "bottoms",
+    "color": "light wash denim",
+    "tags": [
+      "light wash denim",
+      "blue",
+      "wide leg",
+      "high waist",
+      "minimalist",
+      "wardrobe essential"
+    ],
+    "confidence": 97,
+    "file": "BOT-007.jpg",
+    "source_crop": "wardrobe_008_card06",
+    "image": "/images/wardrobe/BOT-007.jpg"
+  },
+  {
+    "id": "BOT-008",
+    "name": "Denim Bermuda Shorts \u2014 Light Wash",
+    "brand": "Banana Republic",
+    "category": "bottoms",
+    "color": "light wash denim",
+    "tags": [
+      "light wash denim",
+      "blue",
+      "bermuda",
+      "high waist",
+      "relaxed",
+      "effortless"
+    ],
+    "confidence": 93,
+    "file": "BOT-008.jpg",
+    "source_crop": "wardrobe_008_card07",
+    "image": "/images/wardrobe/BOT-008.jpg"
+  },
+  {
+    "id": "BOT-009",
+    "name": "Pleated Midi Skirt \u2014 Black",
+    "brand": "Net A Porter",
+    "category": "bottoms",
+    "color": "black",
+    "tags": [
+      "black",
+      "midi",
+      "full",
+      "voluminous",
+      "pleated",
+      "feminine",
+      "quiet luxury"
+    ],
+    "confidence": 92,
+    "file": "BOT-009.jpg",
+    "source_crop": "wardrobe_008_card08",
+    "image": "/images/wardrobe/BOT-009.jpg"
+  },
+  {
+    "id": "BOT-010",
+    "name": "Wide-Leg Jeans \u2014 Dark Indigo",
+    "brand": "Frame",
+    "category": "bottoms",
+    "color": "dark indigo",
+    "tags": [
+      "dark indigo",
+      "dark wash denim",
+      "wide leg",
+      "high waist",
+      "quiet luxury",
+      "wardrobe essential"
+    ],
+    "confidence": 95,
+    "file": "BOT-010.jpg",
+    "source_crop": "wardrobe_008_card09",
+    "image": "/images/wardrobe/BOT-010.jpg"
+  },
+  {
+    "id": "BOT-011",
+    "name": "Midi Skirt \u2014 White",
+    "brand": "Banana Republic",
+    "category": "bottoms",
+    "color": "white",
+    "tags": [
+      "white",
+      "midi",
+      "full",
+      "flowy",
+      "feminine",
+      "effortless"
+    ],
+    "confidence": 92,
+    "file": "BOT-011.jpg",
+    "source_crop": "wardrobe_008_card10",
+    "image": "/images/wardrobe/BOT-011.jpg"
+  },
+  {
+    "id": "BOT-012",
+    "name": "Wide-Leg Jeans \u2014 Light Wash (shimmer)",
+    "brand": "ShopBop",
+    "category": "bottoms",
+    "color": "light wash denim",
+    "tags": [
+      "light wash denim",
+      "blue",
+      "wide leg",
+      "shimmer",
+      "effortless"
+    ],
+    "confidence": 85,
+    "file": "BOT-012.jpg",
+    "source_crop": "wardrobe_008_card11",
+    "image": "/images/wardrobe/BOT-012.jpg"
+  },
+  {
+    "id": "BOT-013",
+    "name": "Wide-Leg Jeans \u2014 Light Wash (clean)",
+    "brand": "ShopBop",
+    "category": "bottoms",
+    "color": "light wash denim",
+    "tags": [
+      "light wash denim",
+      "blue",
+      "wide leg",
+      "clean",
+      "effortless"
+    ],
+    "confidence": 85,
+    "file": "BOT-013.jpg",
+    "source_crop": "wardrobe_008_card12",
+    "image": "/images/wardrobe/BOT-013.jpg"
+  },
+  {
+    "id": "BOT-014",
+    "name": "Wide-Leg Trousers \u2014 Leopard Print",
+    "brand": "ShopBop",
+    "category": "bottoms",
+    "color": "leopard",
+    "tags": [
+      "leopard",
+      "animal print",
+      "wide leg",
+      "bold",
+      "statement",
+      "fashion-forward"
+    ],
+    "confidence": 97,
+    "file": "BOT-014.jpg",
+    "source_crop": "wardrobe_011_card00",
+    "image": "/images/wardrobe/BOT-014.jpg"
+  },
+  {
+    "id": "BOT-015",
+    "name": "Wide-Leg Jeans \u2014 Mid Blue Barrel Elastic",
+    "brand": "ShopBop",
+    "category": "bottoms",
+    "color": "mid blue denim",
+    "tags": [
+      "mid blue denim",
+      "barrel leg",
+      "elastic waist",
+      "relaxed",
+      "casual cool",
+      "effortless"
+    ],
+    "confidence": 92,
+    "file": "BOT-015.jpg",
+    "source_crop": "wardobe_012_card00",
+    "image": "/images/wardrobe/BOT-015.jpg"
+  },
+  {
+    "id": "BOT-016",
+    "name": "Wide-Leg Jeans \u2014 Dark Indigo High Waist",
+    "brand": "Frame",
+    "category": "bottoms",
+    "color": "dark indigo",
+    "tags": [
+      "dark indigo",
+      "dark wash denim",
+      "wide leg",
+      "high waist",
+      "quiet luxury",
+      "wardrobe essential"
+    ],
+    "confidence": 95,
+    "file": "BOT-016.jpg",
+    "source_crop": "wardrobe_013_card00",
+    "image": "/images/wardrobe/BOT-016.jpg"
+  },
+  {
+    "id": "DRS-001",
+    "name": "Crochet/Lace Maxi Dress \u2014 White",
+    "brand": "ShopBop",
+    "category": "dresses",
+    "color": "white",
+    "tags": [
+      "white",
+      "crochet",
+      "lace",
+      "maxi",
+      "sleeveless",
+      "feminine",
+      "romantic",
+      "statement"
+    ],
+    "confidence": 88,
+    "file": "DRS-001.jpg",
+    "source_crop": "wardrobe_007_card00",
+    "image": "/images/wardrobe/DRS-001.jpg"
+  },
+  {
+    "id": "DRS-002",
+    "name": "Ruched Maxi Dress \u2014 Ivory",
+    "brand": "Gilt",
+    "category": "dresses",
+    "color": "ivory",
+    "tags": [
+      "ivory",
+      "cream",
+      "ruched",
+      "maxi",
+      "sleeveless",
+      "quiet luxury",
+      "fitted"
+    ],
+    "confidence": 88,
+    "file": "DRS-002.jpg",
+    "source_crop": "wardrobe_007_card01",
+    "image": "/images/wardrobe/DRS-002.jpg"
+  },
+  {
+    "id": "DRS-003",
+    "name": "Maxi Dress \u2014 Black Gathered",
+    "brand": "Revolve",
+    "category": "dresses",
+    "color": "black",
+    "tags": [
+      "black",
+      "maxi",
+      "gathered",
+      "voluminous",
+      "effortless",
+      "minimalist"
+    ],
+    "confidence": 90,
+    "file": "DRS-003.jpg",
+    "source_crop": "wardrobe_007_card02",
+    "image": "/images/wardrobe/DRS-003.jpg"
+  },
+  {
+    "id": "DRS-004",
+    "name": "Midi Dress \u2014 Black Puff Sleeve",
+    "brand": "Doen",
+    "category": "dresses",
+    "color": "black",
+    "tags": [
+      "black",
+      "midi",
+      "puff sleeve",
+      "feminine",
+      "romantic",
+      "boho luxe"
+    ],
+    "confidence": 93,
+    "file": "DRS-004.jpg",
+    "source_crop": "wardrobe_007_card03",
+    "image": "/images/wardrobe/DRS-004.jpg"
+  },
+  {
+    "id": "DRS-005",
+    "name": "Maxi Dress \u2014 Black Scallop V-Neck",
+    "brand": "Net A Porter",
+    "category": "dresses",
+    "color": "black",
+    "tags": [
+      "black",
+      "maxi",
+      "scallop trim",
+      "v-neck",
+      "sleeveless",
+      "quiet luxury",
+      "feminine"
+    ],
+    "confidence": 90,
+    "file": "DRS-005.jpg",
+    "source_crop": "wardrobe_007_card04",
+    "image": "/images/wardrobe/DRS-005.jpg"
+  },
+  {
+    "id": "DRS-006",
+    "name": "T-Shirt Maxi Dress \u2014 Black",
+    "brand": "Chaco",
+    "category": "dresses",
+    "color": "black",
+    "tags": [
+      "black",
+      "maxi",
+      "t-shirt",
+      "relaxed",
+      "minimalist",
+      "effortless",
+      "wardrobe essential"
+    ],
+    "confidence": 97,
+    "file": "DRS-006.jpg",
+    "source_crop": "wardrobe_007_card05",
+    "image": "/images/wardrobe/DRS-006.jpg"
+  },
+  {
+    "id": "DRS-007",
+    "name": "Maxi Dress \u2014 Kelly Green",
+    "brand": "Chaco",
+    "category": "dresses",
+    "color": "kelly green",
+    "tags": [
+      "green",
+      "kelly green",
+      "maxi",
+      "sleeveless",
+      "a-line",
+      "bold",
+      "color pop"
+    ],
+    "confidence": 97,
+    "file": "DRS-007.jpg",
+    "source_crop": "wardrobe_007_card06",
+    "image": "/images/wardrobe/DRS-007.jpg"
+  },
+  {
+    "id": "DRS-008",
+    "name": "Maxi Dress \u2014 Orange Gathered",
+    "brand": "Chaco",
+    "category": "dresses",
+    "color": "orange",
+    "tags": [
+      "orange",
+      "terra cotta",
+      "maxi",
+      "gathered",
+      "spaghetti strap",
+      "boho luxe",
+      "color pop"
+    ],
+    "confidence": 97,
+    "file": "DRS-008.jpg",
+    "source_crop": "wardrobe_007_card07",
+    "image": "/images/wardrobe/DRS-008.jpg"
+  },
+  {
+    "id": "OUT-001",
+    "name": "Long Duster Coat \u2014 Cream",
+    "brand": "Reformation",
+    "category": "outerwear",
+    "color": "cream",
+    "tags": [
+      "cream",
+      "ivory",
+      "long",
+      "duster",
+      "relaxed",
+      "quiet luxury",
+      "wardrobe essential"
+    ],
+    "confidence": 97,
+    "file": "OUT-001.jpg",
+    "source_crop": "wardrobe_006_card00",
+    "image": "/images/wardrobe/OUT-001.jpg"
+  },
+  {
+    "id": "OUT-002",
+    "name": "Chore Coat / Shacket \u2014 Ivory",
+    "brand": "La Ligne",
+    "category": "outerwear",
+    "color": "ivory",
+    "tags": [
+      "ivory",
+      "cream",
+      "boxy",
+      "structured",
+      "chore coat",
+      "quiet luxury"
+    ],
+    "confidence": 90,
+    "file": "OUT-002.jpg",
+    "source_crop": "wardrobe_006_card01",
+    "image": "/images/wardrobe/OUT-002.jpg"
+  },
+  {
+    "id": "OUT-003",
+    "name": "Chore Coat \u2014 Ivory (J Crew)",
+    "brand": "J Crew",
+    "category": "outerwear",
+    "color": "ivory",
+    "tags": [
+      "ivory",
+      "cream",
+      "boxy",
+      "relaxed",
+      "chore coat",
+      "effortless",
+      "corduroy collar"
+    ],
+    "confidence": 88,
+    "file": "OUT-003.jpg",
+    "source_crop": "wardrobe_006_card02",
+    "image": "/images/wardrobe/OUT-003.jpg"
+  },
+  {
+    "id": "OUT-004",
+    "name": "Oversized Jacket \u2014 Black",
+    "brand": "Reformation",
+    "category": "outerwear",
+    "color": "black",
+    "tags": [
+      "black",
+      "oversized",
+      "structured",
+      "quiet luxury",
+      "versatile"
+    ],
+    "confidence": 90,
+    "file": "OUT-004.jpg",
+    "source_crop": "wardrobe_006_card03",
+    "image": "/images/wardrobe/OUT-004.jpg"
+  },
+  {
+    "id": "SUT-001",
+    "name": "Double-Breasted Blazer \u2014 Ivory",
+    "brand": "Banana Republic",
+    "category": "suiting",
+    "color": "ivory",
+    "tags": [
+      "ivory",
+      "cream",
+      "structured",
+      "double-breasted",
+      "quiet luxury",
+      "polished",
+      "wardrobe essential"
+    ],
+    "confidence": 97,
+    "file": "SUT-001.jpg",
+    "source_crop": "wardrobe_003_card00",
+    "image": "/images/wardrobe/SUT-001.jpg"
+  },
+  {
+    "id": "SUT-002",
+    "name": "Pinstripe Belted Blazer \u2014 Khaki",
+    "brand": "Farfetch",
+    "category": "suiting",
+    "color": "khaki",
+    "tags": [
+      "khaki",
+      "beige",
+      "pinstripe",
+      "structured",
+      "belted",
+      "quiet luxury",
+      "fashion-forward"
+    ],
+    "confidence": 95,
+    "file": "SUT-002.jpg",
+    "source_crop": "wardrobe_003_card01",
+    "image": "/images/wardrobe/SUT-002.jpg"
+  },
+  {
+    "id": "SHO-001",
+    "name": "Slingback Kitten Heel \u2014 Black",
+    "brand": "ShopBop",
+    "category": "shoes",
+    "color": "black",
+    "tags": [
+      "black",
+      "kitten heel",
+      "slingback",
+      "pointed",
+      "minimalist",
+      "quiet luxury"
+    ],
+    "confidence": 93,
+    "file": "SHO-001.jpg",
+    "source_crop": "wardrobe_004_card00",
+    "image": "/images/wardrobe/SHO-001.jpg"
+  },
+  {
+    "id": "SHO-002",
+    "name": "Knee-High Boot \u2014 Black (STAUD)",
+    "brand": "STAUD",
+    "category": "shoes",
+    "color": "black",
+    "tags": [
+      "black",
+      "knee-high boot",
+      "tall boot",
+      "pointed",
+      "sleek",
+      "quiet luxury"
+    ],
+    "confidence": 97,
+    "file": "SHO-002.jpg",
+    "source_crop": "wardrobe_004_card01",
+    "image": "/images/wardrobe/SHO-002.jpg"
+  },
+  {
+    "id": "SHO-003",
+    "name": "Slide Sandal \u2014 Black",
+    "brand": "Net A Porter",
+    "category": "shoes",
+    "color": "black",
+    "tags": [
+      "black",
+      "flat",
+      "slide",
+      "sandal",
+      "minimalist",
+      "effortless"
+    ],
+    "confidence": 93,
+    "file": "SHO-003.jpg",
+    "source_crop": "wardrobe_004_card02",
+    "image": "/images/wardrobe/SHO-003.jpg"
+  },
+  {
+    "id": "SHO-004",
+    "name": "Woven Bow Flat \u2014 Tan (Freida Salvador)",
+    "brand": "Freida Salvador",
+    "category": "shoes",
+    "color": "tan",
+    "tags": [
+      "tan",
+      "natural",
+      "woven",
+      "flat",
+      "bow",
+      "ballet flat",
+      "feminine",
+      "effortless"
+    ],
+    "confidence": 95,
+    "file": "SHO-004.jpg",
+    "source_crop": "wardrobe_004_card03",
+    "image": "/images/wardrobe/SHO-004.jpg"
+  },
+  {
+    "id": "SHO-005",
+    "name": "Ballet Flat \u2014 Cream Woven",
+    "brand": "Steve Madden",
+    "category": "shoes",
+    "color": "cream",
+    "tags": [
+      "cream",
+      "flat",
+      "ballet",
+      "woven",
+      "feminine",
+      "effortless"
+    ],
+    "confidence": 90,
+    "file": "SHO-005.jpg",
+    "source_crop": "wardrobe_004_card04",
+    "image": "/images/wardrobe/SHO-005.jpg"
+  },
+  {
+    "id": "SHO-006",
+    "name": "Flat Sandal \u2014 White Strappy",
+    "brand": "ShopBop",
+    "category": "shoes",
+    "color": "white",
+    "tags": [
+      "white",
+      "flat",
+      "sandal",
+      "strappy",
+      "minimalist"
+    ],
+    "confidence": 88,
+    "file": "SHO-006.jpg",
+    "source_crop": "wardrobe_004_card05",
+    "image": "/images/wardrobe/SHO-006.jpg"
+  },
+  {
+    "id": "SHO-007",
+    "name": "Penny Loafer \u2014 Cream/White",
+    "brand": "ShopBop",
+    "category": "shoes",
+    "color": "cream/off-white",
+    "tags": [
+      "cream",
+      "off-white",
+      "flat",
+      "loafer",
+      "penny loafer",
+      "classic",
+      "effortless",
+      "quiet luxury"
+    ],
+    "confidence": 92,
+    "file": "SHO-007.jpg",
+    "source_crop": "wardrobe_004_card06",
+    "image": "/images/wardrobe/SHO-007.jpg"
+  },
+  {
+    "id": "SHO-008",
+    "name": "Slide Sandal \u2014 Nude",
+    "brand": "ShopBop",
+    "category": "shoes",
+    "color": "nude",
+    "tags": [
+      "nude",
+      "cream",
+      "flat",
+      "slide",
+      "minimalist"
+    ],
+    "confidence": 88,
+    "file": "SHO-008.jpg",
+    "source_crop": "wardrobe_004_card07",
+    "image": "/images/wardrobe/SHO-008.jpg"
+  },
+  {
+    "id": "SHO-009",
+    "name": "Heeled Sandal \u2014 Tan Lace-Up",
+    "brand": "ShopBop",
+    "category": "shoes",
+    "color": "tan",
+    "tags": [
+      "tan",
+      "camel",
+      "heeled",
+      "strappy",
+      "wrap",
+      "feminine"
+    ],
+    "confidence": 85,
+    "file": "SHO-009.jpg",
+    "source_crop": "wardrobe_004_card08",
+    "image": "/images/wardrobe/SHO-009.jpg"
+  },
+  {
+    "id": "SHO-010",
+    "name": "Oxford Loafer \u2014 Black",
+    "brand": "Reformation",
+    "category": "shoes",
+    "color": "black",
+    "tags": [
+      "black",
+      "flat",
+      "loafer",
+      "oxford",
+      "classic",
+      "minimalist",
+      "quiet luxury"
+    ],
+    "confidence": 93,
+    "file": "SHO-010.jpg",
+    "source_crop": "wardrobe_004_card09",
+    "image": "/images/wardrobe/SHO-010.jpg"
+  },
+  {
+    "id": "SHO-011",
+    "name": "Sneaker \u2014 Brown Suede",
+    "brand": "Reformation",
+    "category": "shoes",
+    "color": "brown",
+    "tags": [
+      "brown",
+      "suede",
+      "sneaker",
+      "lace-up",
+      "casual cool",
+      "effortless"
+    ],
+    "confidence": 93,
+    "file": "SHO-011.jpg",
+    "source_crop": "wardrobe_004_card10",
+    "image": "/images/wardrobe/SHO-011.jpg"
+  },
+  {
+    "id": "SHO-012",
+    "name": "Strappy Flat Sandal \u2014 White (Reformation)",
+    "brand": "Reformation",
+    "category": "shoes",
+    "color": "white",
+    "tags": [
+      "white",
+      "flat",
+      "sandal",
+      "strappy",
+      "ankle strap",
+      "minimalist",
+      "effortless"
+    ],
+    "confidence": 92,
+    "file": "SHO-012.jpg",
+    "source_crop": "wardrobe_004_card11",
+    "image": "/images/wardrobe/SHO-012.jpg"
+  },
+  {
+    "id": "SHO-013",
+    "name": "Slingback Flat \u2014 Black",
+    "brand": "Net A Porter",
+    "category": "shoes",
+    "color": "black",
+    "tags": [
+      "black",
+      "flat",
+      "slingback",
+      "minimalist",
+      "quiet luxury"
+    ],
+    "confidence": 90,
+    "file": "SHO-013.jpg",
+    "source_crop": "wardrobe_004_card12",
+    "image": "/images/wardrobe/SHO-013.jpg"
+  },
+  {
+    "id": "SHO-014",
+    "name": "Snakeskin Slide Sandal \u2014 Flat",
+    "brand": "Net A Porter",
+    "category": "shoes",
+    "color": "snakeskin",
+    "tags": [
+      "snakeskin",
+      "neutral",
+      "flat",
+      "slide",
+      "sandal",
+      "quiet luxury",
+      "statement"
+    ],
+    "confidence": 95,
+    "file": "SHO-014.jpg",
+    "source_crop": "wardrobe_004_card13",
+    "image": "/images/wardrobe/SHO-014.jpg"
+  },
+  {
+    "id": "SHO-015",
+    "name": "Ballet Flat \u2014 Cream",
+    "brand": "Matisse",
+    "category": "shoes",
+    "color": "cream",
+    "tags": [
+      "cream",
+      "ivory",
+      "flat",
+      "ballet",
+      "bow",
+      "feminine",
+      "quiet luxury",
+      "effortless"
+    ],
+    "confidence": 95,
+    "file": "SHO-015.jpg",
+    "source_crop": "wardrobe_004_card14",
+    "image": "/images/wardrobe/SHO-015.jpg"
+  },
+  {
+    "id": "SHO-016",
+    "name": "Woven Sandal \u2014 Red",
+    "brand": "STAUD",
+    "category": "shoes",
+    "color": "red",
+    "tags": [
+      "red",
+      "woven",
+      "flat",
+      "sandal",
+      "strappy",
+      "bold",
+      "color pop",
+      "statement"
+    ],
+    "confidence": 93,
+    "file": "SHO-016.jpg",
+    "source_crop": "wardrobe_004_card15",
+    "image": "/images/wardrobe/SHO-016.jpg"
+  },
+  {
+    "id": "SHO-017",
+    "name": "Platform Heeled Sandal \u2014 Gold",
+    "brand": "ShopBop",
+    "category": "shoes",
+    "color": "gold",
+    "tags": [
+      "gold",
+      "metallic",
+      "platform",
+      "heeled",
+      "strappy",
+      "glam",
+      "statement"
+    ],
+    "confidence": 90,
+    "file": "SHO-017.jpg",
+    "source_crop": "wardrobe_005_card00",
+    "image": "/images/wardrobe/SHO-017.jpg"
+  },
+  {
+    "id": "SHO-018",
+    "name": "Ankle Boot \u2014 Black Low Heel",
+    "brand": "Chaco",
+    "category": "shoes",
+    "color": "black",
+    "tags": [
+      "black",
+      "ankle boot",
+      "low heel",
+      "sleek",
+      "minimalist",
+      "quiet luxury"
+    ],
+    "confidence": 92,
+    "file": "SHO-018.jpg",
+    "source_crop": "wardrobe_005_card01",
+    "image": "/images/wardrobe/SHO-018.jpg"
+  },
+  {
+    "id": "SHO-019",
+    "name": "Sneaker \u2014 Silver Metallic",
+    "brand": "Massimo Dutti",
+    "category": "shoes",
+    "color": "silver",
+    "tags": [
+      "silver",
+      "metallic",
+      "sneaker",
+      "low-top",
+      "sporty chic",
+      "statement"
+    ],
+    "confidence": 88,
+    "file": "SHO-019.jpg",
+    "source_crop": "wardrobe_005_card02",
+    "image": "/images/wardrobe/SHO-019.jpg"
+  },
+  {
+    "id": "SHO-020",
+    "name": "Kitten Heel Boot \u2014 Black",
+    "brand": "STAUD",
+    "category": "shoes",
+    "color": "black",
+    "tags": [
+      "black",
+      "kitten heel",
+      "ankle boot",
+      "pointed",
+      "quiet luxury",
+      "feminine"
+    ],
+    "confidence": 93,
+    "file": "SHO-020.jpg",
+    "source_crop": "wardrobe_005_card03",
+    "image": "/images/wardrobe/SHO-020.jpg"
+  },
+  {
+    "id": "SHO-021",
+    "name": "Mary Jane Flat \u2014 Dark Taupe",
+    "brand": "Tony Bianco",
+    "category": "shoes",
+    "color": "dark taupe",
+    "tags": [
+      "dark taupe",
+      "khaki",
+      "flat",
+      "mary jane",
+      "elastic strap",
+      "quiet luxury"
+    ],
+    "confidence": 90,
+    "file": "SHO-021.jpg",
+    "source_crop": "wardrobe_005_card04",
+    "image": "/images/wardrobe/SHO-021.jpg"
+  },
+  {
+    "id": "SHO-022",
+    "name": "Low-Top Sneaker \u2014 White",
+    "brand": "Revolve",
+    "category": "shoes",
+    "color": "white",
+    "tags": [
+      "white",
+      "sneaker",
+      "low-top",
+      "clean",
+      "sporty chic",
+      "effortless"
+    ],
+    "confidence": 92,
+    "file": "SHO-022.jpg",
+    "source_crop": "wardrobe_005_card05",
+    "image": "/images/wardrobe/SHO-022.jpg"
+  },
+  {
+    "id": "SHO-023",
+    "name": "Ankle Boot \u2014 Dark Brown Suede Zip",
+    "brand": "ShopBop",
+    "category": "shoes",
+    "color": "dark brown",
+    "tags": [
+      "dark brown",
+      "suede",
+      "ankle boot",
+      "zip-front",
+      "platform",
+      "casual cool"
+    ],
+    "confidence": 88,
+    "file": "SHO-023.jpg",
+    "source_crop": "wardrobe_005_card06",
+    "image": "/images/wardrobe/SHO-023.jpg"
+  },
+  {
+    "id": "SHO-024",
+    "name": "High-Top Chuck Taylor \u2014 White",
+    "brand": "Revolve",
+    "category": "shoes",
+    "color": "white",
+    "tags": [
+      "white",
+      "sneaker",
+      "high-top",
+      "classic",
+      "casual cool",
+      "retro"
+    ],
+    "confidence": 95,
+    "file": "SHO-024.jpg",
+    "source_crop": "wardrobe_005_card07",
+    "image": "/images/wardrobe/SHO-024.jpg"
+  },
+  {
+    "id": "SHO-025",
+    "name": "High-Top Chuck Taylor \u2014 Black",
+    "brand": "Revolve",
+    "category": "shoes",
+    "color": "black",
+    "tags": [
+      "black",
+      "sneaker",
+      "high-top",
+      "classic",
+      "casual cool",
+      "retro"
+    ],
+    "confidence": 95,
+    "file": "SHO-025.jpg",
+    "source_crop": "wardrobe_005_card08",
+    "image": "/images/wardrobe/SHO-025.jpg"
+  },
+  {
+    "id": "SHO-026",
+    "name": "Pointed Ballet Flat \u2014 Black",
+    "brand": "Tony Bianco",
+    "category": "shoes",
+    "color": "black",
+    "tags": [
+      "black",
+      "flat",
+      "pointed",
+      "ballet",
+      "minimalist",
+      "wardrobe essential",
+      "quiet luxury"
+    ],
+    "confidence": 97,
+    "file": "SHO-026.jpg",
+    "source_crop": "wardrobe_005_card09",
+    "image": "/images/wardrobe/SHO-026.jpg"
+  },
+  {
+    "id": "SHO-027",
+    "name": "Mary Jane Flat \u2014 Black Patent",
+    "brand": "Tony Bianco",
+    "category": "shoes",
+    "color": "black patent",
+    "tags": [
+      "black",
+      "patent",
+      "flat",
+      "mary jane",
+      "feminine",
+      "quiet luxury"
+    ],
+    "confidence": 95,
+    "file": "SHO-027.jpg",
+    "source_crop": "wardrobe_005_card10",
+    "image": "/images/wardrobe/SHO-027.jpg"
+  },
+  {
+    "id": "SHO-028",
+    "name": "Slingback Kitten Heel \u2014 Snakeskin (partial crop)",
+    "brand": "Net A Porter",
+    "category": "shoes",
+    "color": "snakeskin",
+    "tags": [
+      "snakeskin",
+      "kitten heel",
+      "slingback",
+      "quiet luxury"
+    ],
+    "confidence": 70,
+    "file": "SHO-028.jpg",
+    "source_crop": "wardrobe_005_card11",
+    "image": "/images/wardrobe/SHO-028.jpg"
+  },
+  {
+    "id": "SHO-029",
+    "name": "Pointed Slingback \u2014 Black Kitten Heel",
+    "brand": "Nordstrom",
+    "category": "shoes",
+    "color": "black",
+    "tags": [
+      "black",
+      "kitten heel",
+      "slingback",
+      "pointed",
+      "quiet luxury",
+      "polished"
+    ],
+    "confidence": 93,
+    "file": "SHO-029.jpg",
+    "source_crop": "wardrobe_005_card12",
+    "image": "/images/wardrobe/SHO-029.jpg"
+  },
+  {
+    "id": "SHO-030",
+    "name": "Slingback Kitten Heel \u2014 Black Gold Cap-Toe",
+    "brand": "ShopBop",
+    "category": "shoes",
+    "color": "black/gold",
+    "tags": [
+      "black",
+      "gold cap toe",
+      "kitten heel",
+      "slingback",
+      "pointed",
+      "quiet luxury"
+    ],
+    "confidence": 90,
+    "file": "SHO-030.jpg",
+    "source_crop": "wardrobe_005_card13",
+    "image": "/images/wardrobe/SHO-030.jpg"
+  },
+  {
+    "id": "SHO-031",
+    "name": "Sneaker \u2014 Onitsuka Tiger Cream/Black",
+    "brand": "Revolve",
+    "category": "shoes",
+    "color": "cream/black",
+    "tags": [
+      "cream",
+      "black",
+      "sneaker",
+      "low-top",
+      "retro",
+      "sporty chic",
+      "effortless",
+      "Onitsuka Tiger"
+    ],
+    "confidence": 95,
+    "file": "SHO-031.jpg",
+    "source_crop": "wardrobe_17_card00",
+    "image": "/images/wardrobe/SHO-031.jpg"
+  },
+  {
+    "id": "BAG-001",
+    "name": "Woven Drawstring Bag \u2014 Black",
+    "brand": "Chaco",
+    "category": "bags",
+    "color": "black",
+    "tags": [
+      "black",
+      "woven",
+      "drawstring",
+      "bucket",
+      "coastal",
+      "effortless"
+    ],
+    "confidence": 90,
+    "file": "BAG-001.jpg",
+    "source_crop": "wardrobe_007_card08",
+    "image": "/images/wardrobe/BAG-001.jpg"
+  },
+  {
+    "id": "BAG-002",
+    "name": "Wicker Tote \u2014 White/Natural",
+    "brand": "Moda Operandi",
+    "category": "bags",
+    "color": "white/natural",
+    "tags": [
+      "white",
+      "natural",
+      "wicker",
+      "tote",
+      "top handle",
+      "coastal",
+      "feminine"
+    ],
+    "confidence": 93,
+    "file": "BAG-002.jpg",
+    "source_crop": "wardrobe_009_card00",
+    "image": "/images/wardrobe/BAG-002.jpg"
+  },
+  {
+    "id": "BAG-003",
+    "name": "Raffia Fold-Over Clutch",
+    "brand": "ShopBop",
+    "category": "bags",
+    "color": "natural/tan",
+    "tags": [
+      "natural",
+      "tan",
+      "raffia",
+      "woven",
+      "clutch",
+      "envelope",
+      "fold-over",
+      "coastal",
+      "effortless"
+    ],
+    "confidence": 95,
+    "file": "BAG-003.jpg",
+    "source_crop": "wardrobe_009_card06",
+    "image": "/images/wardrobe/BAG-003.jpg"
+  },
+  {
+    "id": "BAG-004",
+    "name": "Gold Glitter Box Clutch",
+    "brand": "Nordstrom",
+    "category": "bags",
+    "color": "gold/champagne",
+    "tags": [
+      "gold",
+      "champagne",
+      "glitter",
+      "box clutch",
+      "structured",
+      "evening",
+      "statement",
+      "glam"
+    ],
+    "confidence": 88,
+    "file": "BAG-004.jpg",
+    "source_crop": "wardrobe_010_card03",
+    "image": "/images/wardrobe/BAG-004.jpg"
+  },
+  {
+    "id": "BAG-005",
+    "name": "Pouch Crossbody \u2014 Chocolate Brown",
+    "brand": "Nordstrom",
+    "category": "bags",
+    "color": "chocolate brown",
+    "tags": [
+      "chocolate brown",
+      "pouch",
+      "crossbody",
+      "ruched",
+      "leather",
+      "quiet luxury",
+      "minimalist"
+    ],
+    "confidence": 92,
+    "file": "BAG-005.jpg",
+    "source_crop": "wardrobe_010_card06",
+    "image": "/images/wardrobe/BAG-005.jpg"
+  },
+  {
+    "id": "BAG-006",
+    "name": "Pouch Clutch \u2014 Black",
+    "brand": "Banana Republic",
+    "category": "bags",
+    "color": "black",
+    "tags": [
+      "black",
+      "pouch",
+      "clutch",
+      "leather",
+      "structured",
+      "minimalist",
+      "quiet luxury"
+    ],
+    "confidence": 92,
+    "file": "BAG-006.jpg",
+    "source_crop": "wardrobe_010_card07",
+    "image": "/images/wardrobe/BAG-006.jpg"
+  },
+  {
+    "id": "BAG-007",
+    "name": "Bucket Bag \u2014 Black Leather",
+    "brand": "J Crew",
+    "category": "bags",
+    "color": "black",
+    "tags": [
+      "black",
+      "bucket",
+      "leather",
+      "structured",
+      "top handle",
+      "minimalist",
+      "quiet luxury",
+      "wardrobe essential"
+    ],
+    "confidence": 95,
+    "file": "BAG-007.jpg",
+    "source_crop": "wardrobe_010_card08",
+    "image": "/images/wardrobe/BAG-007.jpg"
+  },
+  {
+    "id": "BAG-008",
+    "name": "Croc Baguette \u2014 Dark Brown",
+    "brand": "Mango",
+    "category": "bags",
+    "color": "dark brown",
+    "tags": [
+      "dark brown",
+      "croc emboss",
+      "baguette",
+      "shoulder bag",
+      "structured",
+      "quiet luxury",
+      "classic"
+    ],
+    "confidence": 88,
+    "file": "BAG-008.jpg",
+    "source_crop": "wardrobe_010_card11",
+    "image": "/images/wardrobe/BAG-008.jpg"
+  },
+  {
+    "id": "BAG-009",
+    "name": "Crescent Straw Bag \u2014 Natural",
+    "brand": "Chaco",
+    "category": "bags",
+    "color": "natural",
+    "tags": [
+      "natural",
+      "straw",
+      "crescent",
+      "shoulder bag",
+      "coastal",
+      "effortless",
+      "summer"
+    ],
+    "confidence": 93,
+    "file": "BAG-009.jpg",
+    "source_crop": "wardrobe_010_card16",
+    "image": "/images/wardrobe/BAG-009.jpg"
+  },
+  {
+    "id": "BAG-010",
+    "name": "Woven Clutch \u2014 Green",
+    "brand": "Banana Republic",
+    "category": "bags",
+    "color": "green",
+    "tags": [
+      "green",
+      "woven",
+      "clutch",
+      "frame bag",
+      "coastal",
+      "color pop",
+      "effortless"
+    ],
+    "confidence": 93,
+    "file": "BAG-010.jpg",
+    "source_crop": "wardrobe_010_card20",
+    "image": "/images/wardrobe/BAG-010.jpg"
+  },
+  {
+    "id": "BAG-011",
+    "name": "Raffia Bucket Bag \u2014 Red",
+    "brand": "Chaco",
+    "category": "bags",
+    "color": "red",
+    "tags": [
+      "red",
+      "raffia",
+      "woven",
+      "bucket",
+      "tote",
+      "braided handle",
+      "bold",
+      "coastal",
+      "color pop",
+      "statement"
+    ],
+    "confidence": 97,
+    "file": "BAG-011.jpg",
+    "source_crop": "wardrobe_15_card00",
+    "image": "/images/wardrobe/BAG-011.jpg"
+  },
+  {
+    "id": "ACC-001",
+    "name": "Sunglasses \u2014 Tortoiseshell Oval",
+    "brand": "Net-A-Porter",
+    "category": "accessories",
+    "color": "tortoiseshell",
+    "tags": [
+      "tortoiseshell",
+      "oval sunglasses",
+      "quiet luxury",
+      "classic",
+      "retro"
+    ],
+    "confidence": 95,
+    "file": "ACC-001.jpg",
+    "source_crop": "wardrobe_009_card01",
+    "image": "/images/wardrobe/ACC-001.jpg"
+  },
+  {
+    "id": "ACC-002",
+    "name": "Sunglasses \u2014 Tortoiseshell Square",
+    "brand": "Illesteva",
+    "category": "accessories",
+    "color": "tortoiseshell",
+    "tags": [
+      "tortoiseshell",
+      "square sunglasses",
+      "retro",
+      "quiet luxury",
+      "bold frame"
+    ],
+    "confidence": 95,
+    "file": "ACC-002.jpg",
+    "source_crop": "wardrobe_009_card02",
+    "image": "/images/wardrobe/ACC-002.jpg"
+  },
+  {
+    "id": "ACC-003",
+    "name": "Gold Open-Cuff Collar Necklace",
+    "brand": "Chaco",
+    "category": "accessories",
+    "color": "gold",
+    "tags": [
+      "gold",
+      "open cuff",
+      "collar necklace",
+      "minimalist",
+      "quiet luxury",
+      "architectural"
+    ],
+    "confidence": 92,
+    "file": "ACC-003.jpg",
+    "source_crop": "wardrobe_009_card03",
+    "image": "/images/wardrobe/ACC-003.jpg"
+  },
+  {
+    "id": "ACC-004",
+    "name": "Stacked Beaded Bracelets",
+    "brand": "Moda Operandi",
+    "category": "accessories",
+    "color": "multicolor",
+    "tags": [
+      "multicolor",
+      "red",
+      "amber",
+      "sage green",
+      "burgundy",
+      "beaded",
+      "stacked",
+      "boho luxe",
+      "color pop"
+    ],
+    "confidence": 93,
+    "file": "ACC-004.jpg",
+    "source_crop": "wardrobe_009_card04",
+    "image": "/images/wardrobe/ACC-004.jpg"
+  },
+  {
+    "id": "ACC-005",
+    "name": "Jade Bangle \u2014 Green Square",
+    "brand": "Veronica Beard",
+    "category": "accessories",
+    "color": "jade green",
+    "tags": [
+      "green",
+      "jade",
+      "square bangle",
+      "statement",
+      "boho luxe",
+      "artisanal"
+    ],
+    "confidence": 90,
+    "file": "ACC-005.jpg",
+    "source_crop": "wardrobe_009_card05",
+    "image": "/images/wardrobe/ACC-005.jpg"
+  },
+  {
+    "id": "ACC-006",
+    "name": "Pearl Drop Hoop Earrings",
+    "brand": "Mejuri",
+    "category": "accessories",
+    "color": "gold/white",
+    "tags": [
+      "gold",
+      "white",
+      "hoop earring",
+      "pearl drop",
+      "feminine",
+      "quiet luxury",
+      "elevated"
+    ],
+    "confidence": 95,
+    "file": "ACC-006.jpg",
+    "source_crop": "wardrobe_009_card07",
+    "image": "/images/wardrobe/ACC-006.jpg"
+  },
+  {
+    "id": "ACC-007",
+    "name": "Pearl Double-Drop Earrings",
+    "brand": "Nordstrom",
+    "category": "accessories",
+    "color": "gold/white",
+    "tags": [
+      "gold",
+      "white",
+      "pearl",
+      "double drop",
+      "earring",
+      "feminine",
+      "quiet luxury"
+    ],
+    "confidence": 93,
+    "file": "ACC-007.jpg",
+    "source_crop": "wardrobe_010_card00",
+    "image": "/images/wardrobe/ACC-007.jpg"
+  },
+  {
+    "id": "ACC-008",
+    "name": "Gold Crystal Toi-et-Moi Ring",
+    "brand": "BaubleBar",
+    "category": "accessories",
+    "color": "gold/crystal",
+    "tags": [
+      "gold",
+      "crystal",
+      "ring",
+      "toi-et-moi",
+      "statement",
+      "feminine"
+    ],
+    "confidence": 88,
+    "file": "ACC-008.jpg",
+    "source_crop": "wardrobe_010_card01",
+    "image": "/images/wardrobe/ACC-008.jpg"
+  },
+  {
+    "id": "ACC-009",
+    "name": "Gold Twisted Bangle",
+    "brand": "Alexis Bittar",
+    "category": "accessories",
+    "color": "gold",
+    "tags": [
+      "gold",
+      "twisted",
+      "bangle",
+      "sculptural",
+      "quiet luxury",
+      "statement"
+    ],
+    "confidence": 90,
+    "file": "ACC-009.jpg",
+    "source_crop": "wardrobe_010_card02",
+    "image": "/images/wardrobe/ACC-009.jpg"
+  },
+  {
+    "id": "ACC-010",
+    "name": "Leather Belt \u2014 Black Skinny (gold buckle)",
+    "brand": "Antzia",
+    "category": "accessories",
+    "color": "black",
+    "tags": [
+      "black",
+      "belt",
+      "skinny",
+      "gold buckle",
+      "minimalist",
+      "wardrobe essential"
+    ],
+    "confidence": 95,
+    "file": "ACC-010.jpg",
+    "source_crop": "wardrobe_010_card04",
+    "image": "/images/wardrobe/ACC-010.jpg"
+  },
+  {
+    "id": "ACC-011",
+    "name": "Leather Belt \u2014 Black Wide (silver buckle)",
+    "brand": "Antzia",
+    "category": "accessories",
+    "color": "black",
+    "tags": [
+      "black",
+      "belt",
+      "wide",
+      "silver buckle",
+      "minimalist",
+      "wardrobe essential"
+    ],
+    "confidence": 93,
+    "file": "ACC-011.jpg",
+    "source_crop": "wardrobe_010_card05",
+    "image": "/images/wardrobe/ACC-011.jpg"
+  },
+  {
+    "id": "ACC-012",
+    "name": "Leather Belt \u2014 Dark Brown Croc",
+    "brand": "Anthropologie",
+    "category": "accessories",
+    "color": "dark brown",
+    "tags": [
+      "dark brown",
+      "croc emboss",
+      "belt",
+      "classic",
+      "minimalist"
+    ],
+    "confidence": 90,
+    "file": "ACC-012.jpg",
+    "source_crop": "wardrobe_010_card09",
+    "image": "/images/wardrobe/ACC-012.jpg"
+  },
+  {
+    "id": "ACC-013",
+    "name": "Watch \u2014 Gold/Black Leather",
+    "brand": "Nordstrom",
+    "category": "accessories",
+    "color": "gold/black",
+    "tags": [
+      "gold",
+      "black",
+      "rectangular watch",
+      "roman numerals",
+      "leather strap",
+      "classic",
+      "quiet luxury"
+    ],
+    "confidence": 88,
+    "file": "ACC-013.jpg",
+    "source_crop": "wardrobe_010_card10",
+    "image": "/images/wardrobe/ACC-013.jpg"
+  },
+  {
+    "id": "ACC-014",
+    "name": "Gold Crystal Circle Earrings",
+    "brand": "BaubleBar",
+    "category": "accessories",
+    "color": "gold/crystal",
+    "tags": [
+      "gold",
+      "crystal",
+      "circle",
+      "drop earring",
+      "feminine",
+      "statement"
+    ],
+    "confidence": 88,
+    "file": "ACC-014.jpg",
+    "source_crop": "wardrobe_010_card12",
+    "image": "/images/wardrobe/ACC-014.jpg"
+  },
+  {
+    "id": "ACC-015",
+    "name": "Gold Disc Stud Earrings",
+    "brand": "Alexis Bittar",
+    "category": "accessories",
+    "color": "gold",
+    "tags": [
+      "gold",
+      "disc",
+      "stud",
+      "hammered",
+      "quiet luxury",
+      "minimalist",
+      "artistic"
+    ],
+    "confidence": 92,
+    "file": "ACC-015.jpg",
+    "source_crop": "wardrobe_010_card13",
+    "image": "/images/wardrobe/ACC-015.jpg"
+  },
+  {
+    "id": "ACC-016",
+    "name": "Socks \u2014 Cream Ribbed",
+    "brand": "J Crew",
+    "category": "accessories",
+    "color": "cream",
+    "tags": [
+      "cream",
+      "ribbed",
+      "socks",
+      "classic",
+      "preppy"
+    ],
+    "confidence": 88,
+    "file": "ACC-016.jpg",
+    "source_crop": "wardrobe_010_card14",
+    "image": "/images/wardrobe/ACC-016.jpg"
+  },
+  {
+    "id": "ACC-017",
+    "name": "Socks \u2014 White + Cream Multipack",
+    "brand": "Amazon",
+    "category": "accessories",
+    "color": "white/cream",
+    "tags": [
+      "white",
+      "cream",
+      "ribbed",
+      "socks",
+      "classic",
+      "multipack"
+    ],
+    "confidence": 85,
+    "file": "ACC-017.jpg",
+    "source_crop": "wardrobe_010_card15",
+    "image": "/images/wardrobe/ACC-017.jpg"
+  },
+  {
+    "id": "ACC-018",
+    "name": "Leather Belt \u2014 Cream/Ivory Skinny",
+    "brand": "Banana Republic",
+    "category": "accessories",
+    "color": "cream",
+    "tags": [
+      "cream",
+      "ivory",
+      "belt",
+      "skinny",
+      "minimalist",
+      "classic"
+    ],
+    "confidence": 92,
+    "file": "ACC-018.jpg",
+    "source_crop": "wardrobe_010_card17",
+    "image": "/images/wardrobe/ACC-018.jpg"
+  },
+  {
+    "id": "ACC-019",
+    "name": "Leather Belt \u2014 Leopard Print",
+    "brand": "ShopBop",
+    "category": "accessories",
+    "color": "leopard",
+    "tags": [
+      "leopard",
+      "animal print",
+      "belt",
+      "skinny",
+      "bold",
+      "statement",
+      "fashion-forward"
+    ],
+    "confidence": 95,
+    "file": "ACC-019.jpg",
+    "source_crop": "wardrobe_010_card18",
+    "image": "/images/wardrobe/ACC-019.jpg"
+  },
+  {
+    "id": "ACC-020",
+    "name": "Leather Belt \u2014 Tan/Camel",
+    "brand": "Anthropologie",
+    "category": "accessories",
+    "color": "tan",
+    "tags": [
+      "tan",
+      "camel",
+      "belt",
+      "gold buckle",
+      "classic",
+      "minimalist",
+      "warm neutral"
+    ],
+    "confidence": 92,
+    "file": "ACC-020.jpg",
+    "source_crop": "wardrobe_010_card19",
+    "image": "/images/wardrobe/ACC-020.jpg"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "name": "Mia's Outfits",
+  "short_name": "Mia",
+  "description": "Personal AI stylist — visual outfit boards from your real wardrobe",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf9f7",
+  "theme_color": "#faf9f7",
+  "orientation": "portrait"
+}
