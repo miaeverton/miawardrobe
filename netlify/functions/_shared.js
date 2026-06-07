@@ -78,32 +78,10 @@ export function getFeedbackExcerpt() {
   return _feedbackRules;
 }
 
-// ── Wardrobe filtering ────────────────────────────────────────────────────────
-const OCCASION_CATS = {
-  dinner:   new Set(["tops","knitwear","bottoms","dresses","suiting","shoes","bags","accessories"]),
-  work:     new Set(["tops","knitwear","bottoms","suiting","outerwear","shoes","bags"]),
-  offsite:  new Set(["tops","knitwear","bottoms","suiting","outerwear","shoes","bags","accessories"]),
-  weekend:  new Set(["tops","knitwear","bottoms","outerwear","shoes","bags","accessories","dresses"]),
-  tahoe:    new Set(["tops","knitwear","bottoms","outerwear","shoes","bags","accessories"]),
-  travel:   new Set(["tops","knitwear","bottoms","outerwear","dresses","shoes","bags"]),
-  evening:  new Set(["tops","bottoms","dresses","suiting","shoes","bags","accessories"]),
-  casual:   new Set(["tops","knitwear","bottoms","shoes","bags","accessories","dresses"]),
-  capsule:  new Set(["tops","knitwear","bottoms","outerwear","dresses","suiting","shoes","bags","accessories"]),
-};
-const CAT_LIMITS = { tops:12,knitwear:6,bottoms:8,dresses:6,outerwear:4,suiting:2,shoes:16,bags:8,accessories:6 };
-
-export function filterWardrobe(prompt, wardrobe) {
-  const p = (prompt || "").toLowerCase();
-  let cats = null;
-  for (const [kw, c] of Object.entries(OCCASION_CATS)) {
-    if (p.includes(kw)) { cats = c; break; }
-  }
-  const pool = cats ? wardrobe.filter(it => cats.has(it.category)) : wardrobe;
-  const counts = {};
-  return pool.filter(it => {
-    counts[it.category] = (counts[it.category] || 0) + 1;
-    return counts[it.category] <= (CAT_LIMITS[it.category] || 8);
-  });
+// ── Full wardrobe — no filtering ──────────────────────────────────────────────
+// Always send the complete 126-item wardrobe so Claude has full choice.
+export function filterWardrobe(_prompt, wardrobe) {
+  return wardrobe;
 }
 
 export function formatItems(items) {
